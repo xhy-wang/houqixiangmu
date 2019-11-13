@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+    <script src="../static/js/jquery-3.3.1.min.js"></script>
+    <script src="../static/js/bootstrap.min.js"></script>
+    <title>Title</title>
+</head>
+<body>
+bootstrap 容器
+两边有留白
+<div class="container" style="border: 1px red solid">1</div>
+占据全窗口的容器
+<div class="container-fluid" style="border: 1px black solid">2</div>
+<br>
+bootstrap 栅格
+一般使用
+<div class="row">
+    <div class="col-sm-12" style="border: 1px red solid">3</div>
+</div>
+<div class="row">
+    <div class="col-sm-10" style="border: 1px black solid">4</div>
+</div>
+栅格系统的分配
+<div class="row">
+    <div class="col-sm-3" style="border: 1px red solid">51</div>
+    <div class="col-sm-3" style="border: 1px red solid">52</div>
+    <div class="col-sm-3" style="border: 1px red solid">53</div>
+    <div class="col-sm-3" style="border: 1px red solid">54</div>
+</div>
+<br>
+栅格系统的拆分
+<div class="row">
+    <div class="col-sm-2"style="border: 1px red solid">61</div>
+    <div class="col-sm-10" style="border: 1px red solid">
+        <div class="col-lg-2" style="border: 1px red solid">62</div>
+        <div class="col-lg-2" style="border: 1px red solid">63</div>
+        <div class="col-lg-2" style="border: 1px red solid">64</div>
+        <div class="col-lg-2" style="border: 1px red solid">65</div>
+        <div class="col-lg-2" style="border: 1px red solid">66</div>
+        <div class="col-lg-2" style="border: 1px red solid">67</div>
+    </div>
+</div>
+<br>
+栅格系统的列偏移
+<div class="row">
+    <div class="col-sm-5 col-sm-offset-7" style="border: 1px red solid" >7</div>
+</div>
+<br>
+栅格系统的另起一行
+<div class="row">
+    <div class="col-sm-4" style="border: 1px red solid">81</div>
+    <div class="col-sm-4" style="border: 1px red solid">82</div>
+    <div class="col-sm-4" style="border: 1px red solid">83</div>
+    <div class="col-sm-4" style="border: 1px red solid">84</div>
+</div>
+<br>
+Bootstrap
+标题
+<h1>这是h1标题<small>这是副标题</small></h1>
+<h2>这是h2标题<small>这是副标题</small></h2>
+<h3>这是h3标题</h3>
+<h4>这是h4标题</h4>
+<h5>这是h5标题</h5>
+<br>
+主体内容
+<p class="lead">1</p>
+<br>
+内联文本 <br>
+这是个 <mark>内联</mark> 文本
+<br>
+删除文本 <br>
+<del> 这个文本被删除了</del>
+<br>
+插入文本 <br>
+<ins> 这是带有下划线的文本</ins>
+<br>
+着重标签 <br>
+这段话的 <strong>词语最重要</strong>最重要 <br>
+斜体文字 <br>
+<em> 这段文字是斜体的</em> <br>
+文本对齐方式 <br>
+居中对齐 <br>
+<p class="text-center"> 居中对齐的文本</p>
+左对齐 <br>
+<p class="text-left"> 左对齐的文本</p>
+右对齐 <br>
+<p class="text-right"> 右对齐的文本</p>
+改变大小写 <br>
+大写转小写 <br>
+<p class="text-lowercase">CHINESE</p>
+小写转大写 <br>
+<p class="text-uppercase">chinese</p>
+将单词首字母转大写 <br>
+<p class="text-capitalize">chinese</p>
+列表 <br>
+无序列表 <br>
+<ul>
+    <li>你好</li>
+    <li>我好</li>
+    <li>他好</li>
+</ul>
+有序列表 <br>
+<ol>
+    <li>你好</li>
+    <li>我好</li>
+    <li>大家好</li>
+</ol>
+无样式列表 <br>
+<ul class="list-unstyled">
+    <li>你好</li>
+    <li>我好</li>
+    <li>大家好</li>
+</ul>
+内联列表 <br>
+<ol class="list-inline">
+    <li>你好</li>
+    <li>我好</li>
+    <li>大家好</li>
+</ol>
+水平列表 <br>
+<dl class="dl-horizontal">
+    <dt>python</dt>
+    <dd>基本语法</dd>
+    <dt>java</dt>
+    <dd>基本语法</dd>
+</dl>
+Bootstrap表格 <br>
+基本实例 <br>
+<table class="table">
+    <tr>
+        <td>id</td>
+        <td>name</td>
+        <td>sex</td>
+        <td>salary</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>小黑</td>
+        <td>男</td>
+        <td>123</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>小红</td>
+        <td>女</td>
+        <td>345</td>
+    </tr>
+</table>
+带边框的表格 <br>
+<table class="table table-bordered">
+    <tr>
+        <td>id</td>
+        <td>name</td>
+        <td>sex</td>
+        <td>salary</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>小黑</td>
+        <td>男</td>
+        <td>123</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>小红</td>
+        <td>女</td>
+        <td>345</td>
+    </tr>
+</table>
+条纹状的表格 <br>
+<table class="table table-striped">
+    <tr>
+        <td>id</td>
+        <td>name</td>
+        <td>sex</td>
+        <td>salary</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>小黑</td>
+        <td>男</td>
+        <td>123</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>小红</td>
+        <td>女</td>
+        <td>345</td>
+    </tr>
+</table>
+鼠标悬停 <br>
+<table class="table table-hover">
+    <tr>
+        <td>id</td>
+        <td>name</td>
+        <td>sex</td>
+        <td>salary</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>小黑</td>
+        <td>男</td>
+        <td>123</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>小红</td>
+        <td>女</td>
+        <td>345</td>
+    </tr>
+</table>
+紧缩表格 <br>
+<table class="table table-condensed">
+    <tr>
+        <td>id</td>
+        <td>name</td>
+        <td>sex</td>
+        <td>salary</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>小黑</td>
+        <td>男</td>
+        <td>123</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>小红</td>
+        <td>女</td>
+        <td>345</td>
+    </tr>
+</table>
+表格的状态类 <br>
+<table class="table table-hover">
+    <tr>
+        <td>active</td>
+        <td>鼠标悬停在行或单元格上时所设置的颜色</td>
+    </tr>
+    <tr>
+        <td>success</td>
+        <td>表示成功或积极地动作</td>
+    </tr>
+    <tr>
+        <td>info</td>
+        <td>表示普通的提示信息或动作</td>
+    </tr>
+    <tr>
+        <td>warning</td>
+        <td>标识警告或需要用户注意</td>
+    </tr>
+    <tr>
+        <td>danger</td>
+        <td>标识危险或潜在的负面影响的动作</td>
+    </tr>
+</table>
+在tr上使用 <br>
+<table class="table">
+    <tr class="danger">
+        <td>1</td>
+        <td>小红</td>
+        <td>男</td>
+    </tr>
+</table>
+在td上使用 <br>
+<table class="table table-hover">
+    <tr>
+        <td class="danger">2</td>
+        <td class="warning">小黑</td>
+        <td class="success">男</td>
+    </tr>
+</table>
+Bootstrap表单 <br>
+基本实例 <br>
+<form action="">
+    <div class="form-group">
+        <label for="name">用户名：</label>
+        <input type="text" class="form-control" id="name"><br>
+    </div>
+    <div class="form-group">
+        <label for="pwd">密码：</label>
+        <input type="text" class="form-control" id="pwd"><br>
+    </div>
+
+    <div class="form-group">
+        <label for="file">请选择文件：</label>
+        <input type="file" id="file">
+        <p class="help-block">上传的文件大小不能超过2G</p>
+    </div>
+
+    <div class="checkbox">
+        <label>
+            <input type="checkbox">电视
+        </label>
+        <label>
+            <input type="checkbox">手机
+        </label>
+        <label>
+            <input type="checkbox">电脑
+        </label>
+    </div>
+
+    <select class="form-control">
+        <option value="1">北京</option>
+        <option value="2">南京</option>
+        <option value="3">东京</option>
+    </select>
+</form>
+内联表单 <br>
+<form class="form-inline">
+    <div class="form-group">
+        <label for="">用户名：</label>
+        <input type="text" class="form-control">
+    </div>
+</form>
+输入框组 定制输入框 <br>
+<form action="" class="form-inline">
+    <div class="form-group">
+        <label for="salary">请输入金额：</label>
+        <div class="input-group">
+            <div class="input-group-addon">￥</div>
+            <input type="text" class="form-control" id="salary">
+            <div class="input-group-addon">.00</div>
+        </div>
+    </div>
+</form>
+水平排列的表单 <br>
+<form action="" class="form-horizontal">
+    <div class="form-group">
+        <label for="name" class="col-sm-2 control-label">用户名：</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="name">
+        </div>
+    </div>
+</form>
+复选框单选框 <br>
+复选框 <br>
+<div class="checkbox">
+    <label>
+        <input type="checkbox" value="">
+        Option one is this and that&mdash;be sure to include why it's great
+    </label>
+</div>
+
+<div class="checkbox disabled">
+    <label>
+        <input type="checkbox" value="" disabled>
+        Option two is disabled
+    </label>
+</div>
+单选框 <br>
+<div class="radio">
+    <label>
+        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+        Option one is this and that&mdash;be sure to include why it's great
+    </label>
+</div>
+<div class="radio">
+    <label>
+        <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+        Option two can be something else and selecting it will deselect option one
+    </label>
+</div>
+下拉列表 <br>
+基本实例 <br>
+<select class="form-control">
+    <option value="1">北京</option>
+    <option value="2">东京</option>
+    <option value="3">南京</option>
+</select>
+实现多选 <br>
+<select class="form-control" multiple>
+    <option value="1">北京</option>
+    <option value="2">东京</option>
+    <option value="3">南京</option>
+</select>
+静态控件 <br>
+<form action="" class="form-horizontal">
+    <div class="form-group">
+        <label for="" class="col-sm-2 control-label">Email：</label>
+        <div class="col-sm-10">
+            <p class="form-control-static">email@example.com</p>
+        </div>
+    </div>
+</form>
+校验状态 <br>
+<div class="form-group has-success">
+    <label for="" class="col-sm-2 control-label">Email：</label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control">
+    </div>
+</div>
+为校验状态设置图标 <br>
+<form action="" class="form-horizontal">
+    <div class="form-group has-success has-feedback">
+        <label for="" class="col-sm-2 control-label">Email：</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control">
+            <span class="glyphicon glyphicon-flash form-control-feedback"></span>
+        </div>
+    </div>
+</form>
+为输入框设置前后样式 <br>
+<form action="" class="form-horizontal">
+    <div class="form-group has-success has-feedback">
+        <label for="" class="col-sm-2 control-label">Email：</label>
+        <div class="col-sm-10">
+            <div class="input-group">
+                <span class="input-group-addon">@</span>
+                <input type="text" class="form-control">
+            </div>
+            <span class="glyphicon glyphicon-flash form-control-feedback"></span>
+        </div>
+    </div>
+</form>
+控件尺寸 <br>
+控制表单基本元素的大小 <br>
+<div class="form-group has-success has-feedback">
+    <label for="" class="col-sm-2 control-label">Email：</label>
+    <div class="col-sm-10">
+        <div class="input-group">
+            <span class="input-group-addon">@</span>
+            <input type="text" class="form-control input-sm">
+        </div>
+        <span class="glyphicon glyphicon-flash form-control-feedback"></span>
+    </div>
+</div>
+Bootstrap 按钮 <br>
+基本实例 <br>
+<a href="" class="btn btn-default">按钮</a>
+<button class="btn btn-default">按钮</button>
+<input type="submit" value="按钮" class="btn btn-default">
+<br>
+按钮的样式 <br>
+<button class="btn btn-default">按钮</button>
+<button class="btn btn-success">按钮</button>
+<button class="btn btn-info">按钮</button>
+<button class="btn btn-warning">按钮</button>
+<button class="btn btn-danger">按钮</button>
+<button class="btn btn-primary">按钮</button>
+<button class="btn btn-link">按钮</button>
+<br>
+调整按钮尺寸 <br>
+大
+<button class="btn btn-default btn-lg">按钮</button>
+<br>
+正常
+<button class="btn btn-info btn-sm">按钮</button>
+<br>
+小
+<button class="btn btn-danger btn-xs">按钮</button>
+<br>
+Bootstrap 图片 <br>
+图片的生成 <br>
+图片变圆
+<img src="../static/img/2016-06-01%20165319.jpg" alt="" class="img-circle" width="80px">
+<br>
+图片圆角
+<img src="../static/img/2016-06-01%20165319.jpg" alt="" class="img-rounded" width="80px">
+<br>
+为图片加边框
+<img src="../static/img/2016-06-01%20165319.jpg" alt="" class="img-thumbnail" width="80px">
+<br>
+Bootstrap辅助类 <br>
+文字颜色 <br>
+<p class="text-muted">各种颜色</p>
+<p class="text-primary">各种颜色</p>
+<p class="text-success">各种颜色</p>
+<p class="text-info">各种颜色</p>
+<p class="text-warning">各种颜色</p>
+<p class="text-danger">各种颜色</p>
+背景色 <br>
+<p class="bg-primary">各种颜色</p>
+<p class="bg-success">各种颜色</p>
+<p class="bg-info">各种颜色</p>
+<p class="bg-warning">各种颜色</p>
+<p class="bg-danger">各种颜色</p>
+关闭按钮 <br>
+<button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+<br>
+三角符号 <br>
+<span class="caret"></span>
+<br>
+Bootstrap 图标 <br>
+基本实例 <br>
+使用 <br>
+<span class="glyphicon glyphicon-apple"></span> 苹果 <br>
+用在按钮上 <br>
+ <button class="btn btn-default">
+    <span class="glyphicon glyphicon-apple"></span> 按钮
+</button>
+
+<button class="btn btn-default">
+    <span class="glyphicon glyphicon-flash"></span>
+</button>
+<br>
+Bootstrap 下拉菜单 <br>
+<div class="dropdown">
+    <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+        点我下拉：<span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu">
+        <li><a href="">红烧肉</a></li>
+        <li><a href="">孜然烤肉拌饭</a></li>
+        <li><a href="">自助餐</a></li>
+    </ul>
+</div>
+给下拉菜单添加标题 <br>
+<div class="dropdown">
+    <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+        点我下拉 <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu">
+        <li class="dropdown-header"><a href="">三楼</a></li>
+        <li><a href="">烤肉拌饭</a></li>
+        <li class="dropdown-header"><a href="">二楼</a></li>
+        <li><a href="">水饺</a></li>
+    </ul>
+</div>
+分割线 <br>
+<div class="dropdown">
+    <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+        点我下拉 <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu">
+        <li class="dropdown-header"><a href="">三楼</a></li>
+        <li><a href="">烤肉拌饭</a></li>
+        <li role="separator" class="divider"></li>
+        <li class="dropdown-header"><a href="">二楼</a></li>
+        <li><a href="">水饺</a></li>
+    </ul>
+</div>
+按钮嵌套下拉菜单 <br>
+<div class="btn-group">
+    <button class="btn btn-default">按钮1</button>
+    <button class="btn btn-default">按钮2</button>
+    <!--将下拉菜单的内容包含在按钮组中-->
+    <div class="btn-group">
+        <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+            点我下拉: <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu">
+            <li><a href="">二楼</a></li>
+            <li><a href="">三楼</a></li>
+        </ul>
+    </div>
+</div>
+<br>
+按钮组自适应父元素 <br>
+<div class="btn-group btn-group-justified">
+    <a class="btn btn-default">按钮</a>
+    <a class="btn btn-default">按钮</a>
+</div>
+<br>
+分裂式的下拉菜单 <br>
+<div class="btn-group">
+    <button class="btn btn-primary">按钮</button>
+    <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+    <ul class="dropdown-menu">
+        <li><a href="">羊排</a></li>
+        <li><a href="">全羊</a></li>
+        <li><a href="">羊腿</a></li>
+    </ul>
+</div>
+<br>
+Bootstrap 导航条 <br>
+标签页导航 <br>
+<ul class="nav nav-tabs">
+    <li class="active"><a href="">home</a></li>
+    <li><a href="">regist</a></li>
+    <li><a href="">login</a></li>
+</ul>
+<br>
+胶囊式 <br>
+<ul class="nav nav-pills">
+    <li class="active"><a href="">home</a></li>
+    <li><a href="">regist</a></li>
+    <li><a href="">login</a></li>
+</ul>
+自适应 父容器 <br>
+<ul class="nav nav-pills nav-justified">
+    <li class=""><a href="">Home</a></li>
+    <li class="active"><a href="">Home</a></li>
+    <li><a href="">Home</a></li>
+</ul>
+带有下拉菜单的标签页 <br>
+<ul class="nav nav-tabs">
+    <li><a href="">home</a></li>
+    <li><a href="">login</a></li>
+    <li class="dropdown">
+        <a href="" class="dropdown-toggle" data-toggle="dropdown">
+            单击下拉: <span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu">
+            <li><a href="">你好</a></li>
+            <li><a href="">我也好</a></li>
+        </ul>
+    </li>
+</ul>
+<br>
+Bootstrap 导航条 <br>
+生成导航条的标题 <br>
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a href="" class="navbar-brand">后台管理系统v1.0</a>
+        </div>
+    </div>
+</nav>
+导航条的内容生成 <br>
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class='navbar-header'>
+            <a href="" class="navbar-brand">后台管理</a>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <!--生成链接-->
+                <li class="active"><a href="">link</a></li>
+                <!--生成按钮-->
+                <li><button class="btn btn-default navbar-btn">按钮</button></li>
+                <!--生成下拉菜单-->
+                <li class="dropdown">
+                    <a href="" class="dropdown-toggle" data-toggle="dropdown">
+                        点我下拉：<span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="">小黑</a></li>
+                        <li><a href="">小白</a></li>
+                        <li><a href="">小红</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <!--生成表单-->
+            <form action="" class="navbar-form navbar-right">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="请输入内容">
+                </div>
+                <button class="btn btn-default">提交</button>
+            </form>
+        </div>
+    </div>
+</nav>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
